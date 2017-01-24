@@ -24,13 +24,44 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
         android:ems="10"
         android:id="@+id/LoginName"
         android:hint="username"
         android:layout_marginTop="77dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="?attr/colorPrimary" />
+
+    <CheckBox
+        android:text="keepMeLoggedin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:id="@+id/chBoxStayLoggedin"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="26dp" />
+
+    <Button
+        android:text="Cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelLogin"
+        android:layout_above="@+id/chBoxStayLoggedin"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:onClick="btnLoginonClick "
+        android:layout_alignBottom="@+id/btnCancelLogin"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="62dp"
         android:layout_alignParentEnd="true" />
 
     <EditText
@@ -42,17 +73,6 @@
         android:hint="Password"
         android:layout_below="@+id/LoginName"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="77dp"
+        android:layout_marginTop="52dp"
         android:layout_alignParentEnd="true" />
-
-    <Button
-        android:text="Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnLogin"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="94dp"
-        android:layout_alignParentEnd="true"
-        android:onClick="btnLoginonClick" />
 </RelativeLayout>
