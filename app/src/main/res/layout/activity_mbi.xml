@@ -18,7 +18,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginStart="16dp"
         android:id="@+id/lblWeight"
-        android:textSize="18sp"/>
+        android:textSize="24sp"
+        android:textStyle="normal|bold"/>
 
     <TextView
         android:text="Enter Your Height"
@@ -28,7 +29,8 @@
         android:layout_marginTop="76dp"
         android:layout_below="@+id/lblWeight"
         android:layout_alignStart="@+id/lblWeight"
-        android:textSize="18sp"/>
+        android:textSize="24sp"
+        android:textStyle="normal|bold"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,7 +41,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="11dp"
         android:id="@+id/edtWeight"
-        android:hint="Weight In Inches"/>
+        android:hint="Weight In Inches"
+        android:layout_alignParentEnd="true"/>
 
     <EditText
         android:layout_width="wrap_content"
@@ -50,7 +53,8 @@
         android:layout_below="@+id/lblHeight"
         android:layout_alignParentStart="true"
         android:layout_marginTop="26dp"
-        android:hint="Height In Inches"/>
+        android:hint="Height In Inches"
+        android:layout_alignParentEnd="true"/>
 
     <Button
         android:text="Calculate BMI"
@@ -59,25 +63,31 @@
         android:layout_marginTop="74dp"
         android:id="@+id/button3"
         android:layout_below="@+id/edtHeight"
-        android:layout_centerHorizontal="true"
-        android:onClick="ClaculateOnClick"/>
+        android:onClick="ClaculateOnClick"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"/>
 
     <TextView
         android:text="0.0"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="34dp"
         android:id="@+id/lblMBI"
         android:textSize="24sp"
         android:layout_below="@+id/button3"
-        android:layout_alignEnd="@+id/edtHeight"/>
+        android:textAlignment="center"
+        android:layout_alignParentEnd="true"/>
 
     <Button
         android:text="Save Results"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/lblMBI"
-        android:layout_toStartOf="@+id/button3"
         android:id="@+id/button4"
-        android:onClick="saveResultsOnClick"/>
+        android:onClick="saveResultsOnClick"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:textSize="18sp"/>
 </RelativeLayout>

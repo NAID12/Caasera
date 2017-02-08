@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends BaseActivity {
 
 
   TextView LoginName;
@@ -27,13 +27,18 @@ public class MainActivity extends AppCompatActivity {
   public void btnLoginonClick(View v) {
     Log.i("Click", "Button wes clicked!");
     Log.i("Click", LoginName.getText().toString());
-    Toast.makeText(this, "Welcome to Caasera, We have succesfuly Logged in." +
-        LoginName.getText().toString() + " " +
-        chBoxStayLoggedin.getText().toString(), Toast.LENGTH_LONG).show();
+    //Toast method
+    Toastlt("You are successfully Logged in !" +
+        LoginName.getText().toString() +
+        " " + chBoxStayLoggedin.isChecked());
+
     startActivity(new Intent(this, Landing.class));
   }
-  public void btnCancelOnClick(View v){
+
+
+  public void btnCancelOnClick(View v) {
     Log.e("Click", "Login was Canceled!");
+    Toast.makeText(this, "Login was cancelld!", Toast.LENGTH_LONG).show();
   }
 
   public void SwitchToBmiOncClick(View v) {

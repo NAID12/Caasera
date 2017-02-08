@@ -12,46 +12,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.nasreldinaid.caasera.Landing">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/logo"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="28dp"
-        android:id="@+id/imageView7"
-        android:layout_alignParentEnd="true"
-        android:adjustViewBounds="true"
-        android:layout_alignParentStart="true"
-        android:cropToPadding="false"
-        android:background="@android:color/black"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/golfball"
-        android:id="@+id/imageView8"
-        android:layout_alignBottom="@+id/imageView10"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="11dp"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/golfball"
-        android:id="@+id/imageView10"
-        android:layout_marginTop="113dp"
-        android:layout_below="@+id/imageView7"
-        android:layout_alignParentEnd="true"/>
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/basketball"
-        android:id="@+id/imageView9"
-        android:layout_alignTop="@+id/imageView10"
-        android:layout_toStartOf="@+id/imageView10"
-        android:layout_alignBottom="@+id/imageView8"/>
-
     <Button
         android:text="Login"
         android:layout_width="wrap_content"
@@ -69,5 +29,45 @@
         android:layout_alignTop="@+id/button"
         android:layout_alignParentEnd="true"
         android:layout_marginTop="11dp"/>
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        app:srcCompat="@mipmap/logo"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="28dp"
+        android:id="@+id/imageView7"
+        android:adjustViewBounds="true"
+        android:layout_alignParentStart="true"
+        android:cropToPadding="false"
+        android:background="#606060"
+        android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:srcCompat="@mipmap/golfball"
+        android:id="@+id/imageView8"
+        android:layout_marginTop="120dp"
+        android:layout_below="@+id/imageView7"
+        android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:srcCompat="@mipmap/basketball"
+        android:id="@+id/imageView6"
+        android:layout_alignTop="@+id/imageView8"
+        android:layout_toEndOf="@+id/imageView8"
+        android:layout_marginStart="37dp"/>
+
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_width="80dp"
+        app:srcCompat="@mipmap/softball"
+        android:id="@+id/imageView5"
+        android:layout_marginEnd="37dp"
+        android:layout_alignTop="@+id/imageView6"
+        android:layout_alignParentEnd="true"/>
 
 </RelativeLayout>
